@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  postgres-service:
+    image: postgres
+    container_name: postgres_db
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: azimov
+      POSTGRES_PASSWORD: ea1202
+      POSTGRES_DB: docker
+    restart: always
